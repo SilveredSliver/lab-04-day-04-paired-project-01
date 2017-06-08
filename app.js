@@ -1,7 +1,8 @@
 'use strict';
-function sumFunction() {
-var userName = prompt('Hi there, user! What is your name?');
 
+// Intro & Greeting
+function greetingMessage() {
+var userName = prompt('Hi there, user! What is your name?');
 var userGreeting = prompt('Hello, ' + userName + '! Are you ready to play a guessing game about me? It will only be 5 questions.');
   if (userGreeting.trim().toLowerCase() === 'yes' || userGreeting.trim().toLowerCase() === 'y') {
     alert ('Hurray! Let us get started!');
@@ -12,7 +13,10 @@ var userGreeting = prompt('Hello, ' + userName + '! Are you ready to play a gues
   }
 console.log('User input to prompt userGreeting was ' + userGreeting);
 }
-sumFunction();
+greetingMessage();
+
+// Question 1
+function firstQuestion(){
 var questionOne = prompt('Do you believe I am holding you here against your will?');
   if (questionOne.trim().toLowerCase() === 'yes' || questionOne.trim().toLowerCase() === 'y') {
     alert ('Hahahaha!! I would never do that to you, friend...?');
@@ -22,7 +26,11 @@ var questionOne = prompt('Do you believe I am holding you here against your will
     alert ('I think I am going to take that as a no');
   }
 console.log('User input to prompt questionOne was ' + questionOne);
+}
+firstQuestion();
 
+// Question 2
+function secondQuestion(){
 var questionTwo = prompt('Do you believe this is a game?');
   if (questionTwo.trim().toLowerCase() === 'yes' || questionTwo.trim().toLowerCase() === 'yes') {
     alert ('Ahahahahaha!');
@@ -32,7 +40,11 @@ var questionTwo = prompt('Do you believe this is a game?');
     alert ('Too scared to guess, huh?');
   }
   console.log('User input to prompt questionTwo was ' + questionTwo);
+}
+secondQuestion();
 
+// Question 3
+function thirdQuestion(){
 var questionThree = prompt('Do you feel safe?');
   if (questionThree.trim().toLowerCase() === 'yes' || questionThree.trim().toLowerCase() === 'y') {
     alert ('How quaint :)');
@@ -42,7 +54,11 @@ var questionThree = prompt('Do you feel safe?');
     alert ('You are very bad at responding to anything...');
   }
 console.log('User input to prompt questionThree was ' + questionThree);
+}
+thirdQuestion();
 
+// Question 4
+function fourthQuestion(){
 var questionFour = prompt('Do you like coffee?');
   if (questionFour.trim().toLowerCase() === 'yes' || questionFour.trim().toLowerCase() === 'y') {
     alert ('Be careful of what you drink!');
@@ -52,7 +68,11 @@ var questionFour = prompt('Do you like coffee?');
     alert ('...You are not making this very fun, are you.');
   }
 console.log('User input to prompt questionFour was ' + questionFour);
+}
+fourthQuestion();
 
+// Question 5
+function fifthQuestion(){
 var questionFive = prompt('Do you like icecream?');
   if (questionFive.trim().toLowerCase() === 'yes' || questionFive.trim().toLowerCase() === 'y') {
     alert ('Ok! Go outside and grab some!');
@@ -62,14 +82,20 @@ var questionFive = prompt('Do you like icecream?');
     alert ('You are boring! I am going to go play with someone else!');
   }
 console.log('User input to prompt questionFive was ' + questionFive);
+}
+fifthQuestion();
 
-var finalResponse;
-  if (finalResponse.trim().toLowerCase() === questionOne + questionTwo + questionThree + questionFour + questionFive) {
-    alert ('Hurray! You answered all the questions!');
-  } else {
-    alert ('You did not answer all of the questions, you butt!');
-  }
 
+// var finalResponse;
+//   if (finalResponse.trim().toLowerCase() === questionOne + questionTwo + questionThree + questionFour + questionFive) {
+//     alert ('Hurray! You answered all the questions!');
+//   } else {
+//     alert ('You did not answer all of the questions, you butt!');
+//   }
+
+
+// Question 6
+function sixthQuestion(){
   var correctNumber = Math.floor(Math.random() * (16 - 0) + 0);
 
   for (var guessesLeft = 4; guessesLeft > 0; guessesLeft--) {
@@ -87,7 +113,11 @@ var finalResponse;
       alert('You have to guess between 5 and 15!');
     }
   }
+}
+sixthQuestion();
 
+// Question 7
+function seventhQuestion(){
   var state = ['montana', 'oregon', 'florida', 'arizona'];
 
     for (var guessesLeft = 6; guessesLeft > 0; guessesLeft--) {
@@ -103,6 +133,8 @@ var finalResponse;
       }
     }
         alert('All the correct answers are ' + state.toString());
+  }
+  seventhQuestion();
 
 
 
