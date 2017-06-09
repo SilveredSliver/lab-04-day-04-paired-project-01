@@ -1,5 +1,5 @@
 'use strict';
-
+function wholequestionaire() {
 // Intro & Greeting
 function greetingMessage() {
 var userName = prompt('Hi there, user! What is your name?');
@@ -136,16 +136,17 @@ function seventhQuestion(){
   }
   seventhQuestion();
 
-
+}
+wholequestionaire();
 
   //sample function
-  function getUserName() {
-    var userName = prompt("What is your username?");
-    return userName;/*the user input will change the return value*/
-  }
-
-  var user = getUserName();/*This is assigning the above function "getUserName" to the variable "user"*/
-
-  //user();
-
-  console.log('user value is ' + user);/*The console will give you a note now as to the value of the variable "user"*/
+  // function getUserName() {
+  //   var userName = prompt("What is your username?");
+  //   return userName;/*the user input will change the return value*/
+  // }
+  //
+  // var user = getUserName();/*This is assigning the above function "getUserName" to the variable "user"*/
+  //
+  // //user();
+  //
+  // console.log('user value is ' + user);/*The console will give you a note now as to the value of the variable "user"*/
